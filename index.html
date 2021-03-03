@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/Group 16.svg">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <title>Receitas da vovó</title>
+</head>
+<body >
+    <header>
+      <img src="assets/Group 16.svg" alt="logo">
+      <h1>Receitas da vovó</h1>
+      <div class="info">
+          <h2>O que você está procurando ?</h2>
+        <div class="searc">
+          <a href="pesquisar_receita.html"><input type="text" id="search" name="search" ></a>
+          <img src="assets/search.png" alt="">
+        </div>
+      </div>
+    </header>
+   
+       
+    <main> 
+      
+      <article class="receita_curtida">
+          <h1>Ultima receita:</h1>
+          <a href="#" onclick="abrirecita()" id="receita_link"> 
+            <img src="assets/img/tapioca.jpg" alt="hamburguer caseiro">
+            <div>
+              <h2>Tapioca</h2>
+              <p>😋 <span>Facil</span>
+              </p>
+            </div>
+          </a>
+      </article>
+       <article class="categorias">
+          
+         <div id="n" onclick=" categoria()">
+          
+              <img src="assets/img/salgado.jpg">
+              <h2>salgados</h2>
+  
+        </div>
+        <div onclick=" categoria()">
+         
+            <img src="assets/img/doce.jpeg">
+            <h2>doces</h2>
+     
+        </div >
+        <div onclick=" categoria()">
+         
+            <img src="assets/img/bolo.jpeg">
+            <h2>bolos</h2>
+      
+        </div>
+        <div onclick=" categoria()">
+         
+            <img src="assets/img/saudavel.jpg">
+            <h2>saudáveis</h2>
+ 
+        </div>
+
+        
+       </article>
+
+        <div class="text"><h2>Sugestão de Receitas:</h2> <a href="pesquisar_receita.html">Ver todas</a></div><br>
+        
+      <div class="cards">
+
+      
+        
+        <article onclick="abrirecita()"><!-- Começo de card--> 
+              
+           <img src="assets/img/tapioca.jpg" alt="hamburguer caseiro">
+            <div class="sobre"> 
+              <h1 class="titulo">Tapioca</h1>
+              <p class="porções"> 1 Porções </p>
+              <p class="categoria" style="text-align: center;">Doces </p>
+              <div id="med">
+                 <p>Dificuldade<br><b>😋<span id="Dificuldade">Facil</span><b></p>  <p>Tempo<br><b>⏲️<span id="min"> 5min</span></b></p>
+
+               <div>
+            <div>  
+
+        </article><!-- termino--> 
+
+        
+           
+      </div>
+    </main>
+    <footer>
+      <h1>Receitas da vovó / <a href="https://www.linkedin.com/in/aisl%C3%A2nio-amorim-4009521b8/">Aislânio Amorim</a></h1>
+      <div>Ícones feitos por <a href="https://www.flaticon.com/br/autores/payungkead" title="Payungkead">Payungkead</a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a></div><div>Ícones feitos por <a href="" title="mynamepong">mynamepong</a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a></div>
+    </footer>
+      
+    <div class="loader">
+     <h1>Receitas da vovó</h1>
+     <img id="logo" src="assets/logo.svg">
+     <div class="loader_animation">
+       <img id="garfo" src="assets/garfo.png">
+      <img id="faca" src="assets/faca.png">
+     </div>
+   </div>
+   
+
+   
+   <script type="text/javascript" src="script/script.js"></script>
+</body>
+</html>

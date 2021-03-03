@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body,html{
+	pointer-events: none;
+	width: 100%;
+	height: 100vh;
+}
+.loader{
+	pointer-events: none;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: linear-gradient(90deg, rgba(14,8,117,1) 17%, rgba(98,186,218,1) 46%, rgba(0,116,255,1) 100%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 20px;
+	z-index: 20;
+	animation: color 7s infinite;
+}
+.loader h1{
+	color:white;
+	font-size: 2.4rem;
+	font-family: 'Akaya Telivigala', cursive;
+}
+.hidden{
+	display: none;
+	pointer-events:auto;
+}
+.hi{
+	pointer-events:auto;
+}
+
+.loader #logo{
+	width: 100%;
+	max-width: 140px;
+}
+.loader_animation{
+	display: flex;
+
+}
+.loader .loader_animation img{
+	width: 100%;
+	max-width: 110px;
+	margin: 0 30px 0 30px;
+	
+}
+
+#med{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	border-top: 1px solid black;
+	padding: 15px;
+	color:#615e5e;
+	align-items: center;
+}
+
+
+.abri_receita{
+	background-color: #f7f7f7;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.abri_receita article{
+	    width: 80%;
+    background-color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 72px;
+    height: auto;
+}
+.abri_receita article #img_receita {
+	width: 100%;
+	max-width: 478px;
+}
+.abri_receita h1{
+	color: #ff6a28;
+	font-size: 3rem;
+}
+.abri_receita #med{
+	border: none;
+}
+.abri_receita #med p img,h1 img{
+	width: 100%;
+	max-width: 100px;
+}
+.abri_receita #med p ,h1{
+	display: flex;
+	align-items: center;
+}
+.abri_receita #med p{
+	display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    align-items: center;
+}
+.abri_receita ol,ul  {
+	   display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.abri_receita  li {
+	    font-size: 2.2rem;
+    color: #ffa908
+}
+footer{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	background-color: #ff6a28;
+	color: white;
+}
+footer h1 {
+	color: #ffff;
+}
+/*animação */
+#garfo{
+	animation: garfo 4s infinite;
+}
+#faca{
+	animation: faca 4s infinite;
+}
+@keyframes garfo {
+	from{
+		transform: translateY(-7px);
+	}
+
+	20%{
+		transform: translateY(0px);
+	}
+	to{
+		transform: rotate(40deg);
+		transition: all 4s;
+		
+	}
+	
+}
+@keyframes faca {
+	from{
+		transform: translateY(-7px);
+	}
+
+	20%{
+		transform: translateY(0px);
+	}
+	to{
+		transform: rotate(-42deg);
+		transition: all 4s;
+		
+	}
+	
+}

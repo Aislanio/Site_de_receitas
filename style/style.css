@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body,html{
+	pointer-events: none;
+	width: 100%;
+	height: 100vh;
+	background-color: #f7f7f7;
+}
+a{
+	text-decoration: none;
+}
+.loader{
+	pointer-events: none;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: linear-gradient(90deg, rgba(14,8,117,1) 17%, rgba(98,186,218,1) 46%, rgba(0,116,255,1) 100%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 20px;
+	z-index: 20;
+}
+.loader h1{
+	color:white;
+	font-size: 2.4rem;
+	font-family: 'Akaya Telivigala', cursive;
+}
+.hidden{
+	display: none;
+	pointer-events:auto;
+}
+.hi{
+	pointer-events:auto;
+}
+
+.loader #logo{
+	width: 100%;
+	max-width: 140px;
+}
+.loader_animation{
+	display: flex;
+
+}
+.loader .loader_animation img{
+	width: 100%;
+	max-width: 110px;
+	margin: 0 30px 0 30px;
+	
+}
+header{
+	width: 100%;
+	height:100px;
+	    background: linear-gradient(
+90deg
+, rgba(14,8,117,1), transparent 46%, rgba(0,116,255,1));
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	transition: all 8s;
+	z-index: 17;
+	animation: color 12s infinite;
+	background-size:400% 100%;
+	box-shadow: 0 4px 4px 0 rgb(51 62 72 / 10%), 0 4px 4px 0 rgb(51 62 72 / 10%);
+}
+header img{
+	width: 100%;
+	max-width: 125px;
+}
+header h2,header h1{
+	color:white;
+	font-family: 'Akaya Telivigala', cursive;
+}
+.searc{
+	position: relative;
+}
+.searc input{
+        height: 38px;
+    width: 236px;
+     margin-left: 30px;
+     padding-right: 30px;
+}
+.searc img{
+	position: absolute;
+	width: 100%;
+	max-width: 35px;
+   left: 227px;
+    cursor: pointer;
+}
+.info{
+	display: flex;
+	flex-direction: column;
+}
+main{
+	width: auto;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 10px;
+	    background-color: #f0f0f0;
+}
+main h1,h2,p,a{
+	font-family: 'Akaya Kanadaka', cursive;
+}
+.receita_curtida{
+	position: relative;
+	width: 100%;
+	height: 95%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	 cursor: pointer;
+}
+.receita_curtida h1{
+	font-size: 2rem;
+	margin: 10px;
+	font-family: 'Akaya Kanadaka', cursive;
+}
+.receita_curtida p{
+	text-overflow:ellipsis;
+	font-family: 'Akaya Kanadaka', cursive;
+}
+
+.receita_curtida img{
+	width: 100%;
+	max-width:562px;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}.receita_curtida img:hover{
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+
+}
+.receita_curtida div{
+	position: absolute;
+	    top: 298px;
+    font-size: 1.5rem;
+    color: white;
+    background: rgba(224, 224, 224, 0.35);
+    border-radius: 38px;
+    cursor: pointer;
+    height: 21%;
+}
+.receita_curtida div button{
+	position: relative;
+    top: -69px;
+    left: 325px;
+    width: 48%;
+    height: 53px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    min-width: 129px;
+    color: wheat;
+    background: #dc1111;
+    transition: all 2s;
+    animation: button 3s;
+}
+.categorias{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 90%;
+	height: 50%;
+	/* topo | direita | inferior | esquerda */
+	margin: 50px 10px 73px 10px;
+	overflow-x:scroll;
+}
+.categorias img{
+	width: 100%;
+    max-width: 135px;
+    max-height: 134px;
+}
+.categorias div{
+	margin: 30px;
+	width: 11%;
+    height: auto;
+    text-align: center;
+     cursor: pointer;
+}
+.categorias div a{
+	color:red;
+	text-decoration: none;
+}
+.text{
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+}
+.text a {
+	color: #fb743e;
+	font-size: 1.2rem;
+	text-decoration: underline;
+}
+.text a:hover{
+	color: #f15b1f;
+}
+.cards{
+	width: 100%;
+	height: auto;
+	padding: 10px;
+	display: grid;
+	grid-template-columns: minmax(100px, max-content) repeat(auto-fill, 200px) 20%;
+	grid-gap: 77px;
+	margin-bottom: 20px;
+}
+.cards article{
+	width: 20%;
+	height: auto;
+	background: #ffff;
+ position:relative;
+ top:0;
+    min-width: 232px;
+
+ cursor: pointer;
+     margin-bottom: 136px;
+     border-radius: 10px;
+}
+.cards article img{
+	width:100%; 
+	  border-radius: 10px;
+}
+
+.cards article:hover{
+  top:-7px;
+   transition: all .2s ease-in-out
+ }
+
+ .sobre{
+ 	width: 100%;
+ 	background: #ffff;
+ 	position: absolute;
+ 	    top: 112px;
+    border-radius: 18px;
+
+ }
+ .cards article h1{
+	color: black;
+	text-decoration: none;
+	font-size: 1.6rem;
+	text-align: center;
+    margin-bottom: 29px;
+}
+.porções{
+	color: red;
+	text-align: center;
+	margin: 14px;
+	font-size: 1.3rem;
+}
+#med{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	border-top: 1px solid black;
+	padding: 15px;
+	color:#615e5e;
+	align-items: center;
+}
+
+footer{
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	background-color: #ff6a28;
+	color: white;
+}
+/*Animação*/
+#garfo{
+	animation: garfo 4s infinite;
+}
+#faca{
+	animation: faca 4s infinite;
+}
+@keyframes garfo {
+	from{
+		transform: translateY(-7px);
+	}
+
+	20%{
+		transform: translateY(0px);
+	}
+	to{
+		transform: rotate(40deg);
+		transition: all 4s;
+		
+	}
+	
+}
+@keyframes faca {
+	from{
+		transform: translateY(-7px);
+	}
+
+	20%{
+		transform: translateY(0px);
+	}
+	to{
+		transform: rotate(-42deg);
+		transition: all 4s;
+		
+	}
+	
+}
+@keyframes button {
+	from{
+		transform: translateY(-13px);
+	}
+
+	to{
+		transform: translateY(0px);
+		
+	}
+	
+}
+@keyframes color{
+  0%{
+    background-position: 0% 50% ;
+  }
+  50%{
+    background-position:100% 50% ;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}
