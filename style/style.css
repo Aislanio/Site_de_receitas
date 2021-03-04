@@ -186,6 +186,7 @@ main h1,h2,p,a{
 	width: 100%;
     max-width: 135px;
     max-height: 134px;
+    min-width: 67px;
 }
 .categorias div{
 	margin: 30px;
