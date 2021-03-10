@@ -7,7 +7,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/24a38faf-19de-4ae4-bbef-7abf15010a1d/deploy-status)](https://app.netlify.com/sites/fervent-wiles-3945e4/deploys)
 # Formulario de Login e Cadastro
 
-<img src="https://github.com/Aislanio/Galeria/blob/master/Captura%20de%20Tela%20(186).png" alt="imagem do site">
+<!--<img src="https://github.com/Aislanio/Galeria/blob/master/Captura%20de%20Tela%20(186).png" alt="imagem do site"> -->
 
 > Site de Receitas
 
